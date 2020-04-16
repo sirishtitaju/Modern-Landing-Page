@@ -1,0 +1,68 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+    @include clearfix;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-secondary, 0.8)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    &>* {
+        transform: skewY(7deg);
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.section-tours {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 10rem 0;
+    margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 8rem 0;
+    }
+}
+
+.section-stories {
+    padding: 15rem 0;
+    position: relative;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .8));
+}
+
+.book {
+    background-image: linear-gradient(105deg,
+            rgba($color-white, .65) 0%,
+            rgba($color-white, .7) 50%,
+            rgba($color-white, 0) 50%),
+        url(../img/2.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.8);
+
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}

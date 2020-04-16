@@ -1,0 +1,19 @@
+.mini-header {
+    background-color: $color-grey-dark-3;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 25rem 10rem;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}
